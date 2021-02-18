@@ -1,0 +1,235 @@
+.form-main{
+    width: 100%;
+    height: 1600px;
+    left: 0px;
+    top: 0px;
+
+    /* blue */
+
+    background: #FFD301;
+    /* drop-shadow-01 */
+
+    box-shadow: 0px 30px 64px 10px rgba(47, 47, 47, 0.1);
+    display: flex;
+    justify-content: center;
+}
+.form-content{
+    width: 74%;
+    margin-top: 7%;
+}
+.form-box1{
+    position: relative;
+    width: 100%;
+    height: 1335px;
+    background-color: #FFFFFF;
+    border-radius: 60px;
+    z-index: 3;
+    justify-content: center;
+    display: flex;
+}
+.form-box2 {
+    top: -672px;
+    left: 2.5%;
+    position: relative;
+    width: 95%;
+    height: 700px;
+    background-color: #5939C6;
+    border-radius: 60px;
+    z-index: 2;
+}
+.form-box3{
+    top: -1147px;
+    left: 18%;
+    position: relative;
+    width: 64%;
+    height: 500px;
+    background-color: #5939C6;
+    opacity: 0.7;
+    border-radius: 60px;
+    z-index: 1
+}
+.about-title{
+    font-size: 4.5vh;
+    width: 100%;
+    height: auto;
+    /* overflow: hidden; */
+    margin-top: 6%;
+    // color: #ffffff;
+    line-height: 75px;
+    /* bai-jamjuree-600 - latin */
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 600;
+    // letter-spacing: 1px ;
+    z-index: 10;
+}
+.about-sub-title{
+    font-size: 4.4vh;
+    width: 100%;
+    height: auto;
+    /* overflow: hidden; */
+    margin-top: 2.5%;
+    color: #000000;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 58px;
+    // letter-spacing: 0.8px;
+    z-index: 10;
+}
+.detail-form-content{
+    width: 83%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+
+}
+.img-aboutbox{
+    width: 700px;
+    position: absolute;
+    z-index: 5;
+    // // left: 1000px;
+    top: -55px;
+    // left: 18%;
+    float:right;
+    right: -110px;
+}
+.donate-title-form{
+    margin-top: 10%;
+    font-weight: 600;
+    font-size: 4.5vh;
+    // line-height: 130%;
+    color: #5939C6;
+}
+.form-control {
+    border-radius: 50px !important;
+    margin: 12px 3px;
+    height: 75px;
+    width: 100%;
+    font-size: 2.4vh;
+}
+.form-group{
+    margin-top: 6%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.form-group .sub-label{
+    font-weight: 400;
+    font-size: 2.4vh;
+    color: #2F2F2F;
+}
+.imgactive{
+    border: solid 3px;
+    border-color: #5939C6;
+    border-radius: 65px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    transition-delay: 0s;
+    opacity: 0.9;
+    transition-property: opacity height padding border;
+    transition-duration: 100ms;
+
+    // width: 98%;
+}
+.img-btn{
+    cursor: pointer;
+}
+.imgRadio{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}.imgRadio div{
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.formRadio{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.row {
+    margin-right: -15px ;
+    margin-left: 0px !important;
+    --bs-gutter-x: 0rem !important;
+}
+.group-label{
+    font-weight: 600;
+    font-size: 2.4vh;
+    color: #2F2F2F;
+}
+.form-check{
+    font-size: 2.3vh;
+    padding-left: 0 !important;
+    margin-left: 3% !important; 
+    margin-top: 6%;
+}
+.form-check-input:checked {
+    background-color: #5939C6 !important;
+    border-color: #5939C6 !important;
+}
+.form-check-label{
+    margin-left: 3%;
+    font-weight: 600 !important;
+    font-size: 2.4vh !important;
+    color: #2F2F2F !important;
+}
+.form-check .form-check-input {
+    float: left;
+    margin-left: 0px !important;
+}
+input[type=checkbox]{
+    margin-top: 0.5rem !important;
+}
+.btn-donate{
+    background-color: #5939C6;
+    color: #FFFFFF;
+    height: 80px;
+    border-radius: 60px;
+    width: 94%;
+    font-weight: 500;
+    font-size: 2.4vh;
+}
+@media (max-width: 768px){
+    .form-content{
+        width: 95%;
+    }
+    .donate-title-form{
+        margin-top: 10%;
+        font-weight: 600;
+        font-size: 3.1vh;
+        // line-height: 130%;
+        color: #5939C6;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .row {
+        margin-left: -15px !important;
+    }
+    .form-box1 {
+        height: 1250px;
+        border-radius: 30px;
+    }
+    .form-box2 {
+        height: 700px;
+        border-radius: 30px;
+    }
+    .form-box3 {
+        height: 500;
+        border-radius: 30px;
+        left: 10%;
+        width: 80%;
+    }
+    .form-main{
+        height: 1400px;
+    }
+    .btn-donate{
+        background-color: #5939C6;
+        color: #FFFFFF;
+        height: 8vh;
+        border-radius: 60px;
+        width: 100%;
+        font-weight: 500;
+        font-size: 2.4vh;
+    }
+}
+ 

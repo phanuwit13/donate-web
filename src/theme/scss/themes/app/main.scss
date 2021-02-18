@@ -1,0 +1,150 @@
+body {
+  background-color: $theme-body;
+}
+span.latest-login {
+  color: $theme-nav-span-last-login;
+  position: absolute;
+  right: 25px;
+  top: 40px;
+  font-size: 11px;
+}
+/*loading initialize*/
+#loading-initialize {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFF;
+  background-image: url("/static/images/loading_max.gif");
+  background-size: 54px 54px; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*override wg-table*/
+table.wg-table tbody.wg-body > tr.wg-row:nth-child(even) {
+  background-color: $table-row-child;
+}
+table.wg-table tbody.wg-body > tr.wg-row:nth-child(even) > td.wg-cell {
+  color: #000;
+}
+table.wg-table thead.wg-head > tr.wg-row {
+  background-color: $table-header-color !important;
+}
+table.wg-table th.wg-column {
+  color: #fff !important;
+  font-weight: light !important;
+}
+table.wg-table > tbody.wg-body > tr.wg-row > td.wg-cell {
+  padding: 15px 25px 15px 25px !important;
+}
+table.wg-table > thead.wg-head > tr.wg-row > th.wg-column {
+  padding: 0px 25px 0px 25px !important;
+}
+span.label-cell {
+  color: #000;
+  font-weight: bold;
+}
+span.label-light {
+  color: #000;
+}
+
+/*override wg-formwizard*/
+.wg-formwizard .wizard > .steps > ul > li a {
+  color: $form-wizard-color;
+}
+.wg-formwizard .wizard > .steps > ul > li.current > a {
+  color: $form-wizard-color-active;
+}
+.wg-formwizard .wizard > .steps > ul > li.current .step {
+  border-color: $form-wizard-main;
+  color: $form-wizard-main;
+}
+.wg-formwizard .wizard > .steps > ul > li.done .step {
+  background-color: $form-wizard-main;
+  border-color: $form-wizard-main;
+}
+.wg-formwizard .wizard > .actions > ul > li > a {
+  background: $form-wizard-button;
+}
+.wg-formwizard .wizard.wizard-circle > .steps > ul > li:after,
+.wg-formwizard .wizard.wizard-circle > .steps > ul > li:before {
+  background-color: $form-wizard-line
+}
+.wg-formwizard .wizard.wizard-notification > .steps > ul > li:after,
+.wg-formwizard .wizard.wizard-notification > .steps > ul > li:before {
+  top: 39px;
+  width: 50%;
+  height: 2px;
+  background-color: $form-wizard-line
+}
+.wg-formwizard .wizard.wizard-notification > .steps > ul > li.current .step {
+  border: 2px solid $form-wizard-line;
+  color: $form-wizard-line;
+  line-height: 36px
+}
+.wg-formwizard .wizard.wizard-notification > .steps > ul > li.current .step:after,
+.wg-formwizard .wizard.wizard-notification > .steps > ul > li.done .step:after {
+  border-top-color: $form-wizard-line
+}
+@media (max-width: 768px) {
+  .wg-formwizard .wizard > .steps > ul > li:last-child:after {
+    content: '';
+    background-color: $form-wizard-line
+  }
+}
+@media (max-width: 480px) {
+  .wg-formwizard .wizard > .steps > ul > li.current:after {
+    background-color: $form-wizard-line
+  }
+}
+
+//new dashboard
+.widget-primary-card .row-table > [class*=col-]:first-child, .widget-success-card .row-table > [class*=col-]:first-child {
+    background-color: $card-color; 
+    text-align: center;
+}
+
+// header table create company
+.panel-info {
+  border-color: $theme-color1 !important;
+}
+.panel-info .panel-heading {
+  border-color: $theme-color1 !important;
+  color: white !important;
+  background-color: $theme-color1 !important;
+}
+
+// header modal
+.company-mpos-modal .modal-header{
+  background-color: $theme-color1;
+  color: $white-color;
+}
+
+//new login
+// .newlogin{
+//   background: #3169a7;
+// }
+// .form .thumbnail{
+//  background: $login-bg;
+// }
+// .form button {
+//   background: $login-bg;
+// }
+// .form .message a {
+//   color: $login-bg;
+// }
+// .form input {
+//   background: $white-color;
+// }
+// .form {
+//   background: $login-bg-input;
+// }
+
+/* sweet alert */
+.sweet-alert button {
+  background: $theme-color1 !important;
+}

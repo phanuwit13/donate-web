@@ -1,0 +1,32 @@
+@mixin button-new-color($color) {
+  background-color: $color !important;
+  border-radius: 0px;
+  padding: 18px 10px;
+}
+@mixin button-flat() {
+  padding: 10px 15px !important;
+  border-radius: 0px !important;
+}
+@mixin button-style-flat($bg, $bg-hover, $color, $color-hover, $border) {
+  background-color: $bg;
+  border: 1px solid $border;
+  color: $color !important;
+  &:hover {
+    background-color: $bg-hover;
+    color: $color-hover !important;
+    border: 1px solid $border;
+  }
+  &:active {
+    -webkit-box-shadow: 0px 0px 0px #000 !important;
+    box-shadow: 0px 0px 0px #000 !important;
+  }
+}
+.btn-new-primary-view {
+  @include button-style-flat($btn-new-primary-bg, $btn-new-primary-bg-hover, $btn-new-primary-color, $btn-new-primary-color-hover, $btn-new-primary-border)
+}
+.btn-new-info-view {
+  @include button-style-flat($btn-new-info-bg, $btn-new-info-bg-hover, $btn-new-info-color, $btn-new-info-color-hover, $btn-new-info-border)
+}
+.btn-new-main-view {
+  @include button-style-flat($theme-color1, $theme-color2, #fff, #fff, '')
+}

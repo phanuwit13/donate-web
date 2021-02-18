@@ -1,0 +1,55 @@
+@mixin button-new-color($color) {
+  background-color: $color !important;
+  border-radius: 0px;
+  padding: 18px 10px;
+}
+@mixin button-flat() {
+  padding: 10px 15px !important;
+  border-radius: 0px !important;
+}
+.btn-flat {
+  @include button-flat();
+  padding: 6px 12px !important;
+}
+.btn-flat-lg {
+  @include button-flat();
+}
+.btn-flat-fiter {
+  margin-top: 23px;
+  @include button-flat();
+}
+.btn-gray {
+  @include button-new-color('');
+}
+.btn-gray:not(.btn-raised), .btn-gray:not(.btn-raised).btn-default, .input-group-btn .btn-gray:not(.btn-raised), .input-group-btn .btn-gray:not(.btn-raised).btn-default {
+  color: #FFF;
+}
+.btn-gray:not(.btn-raised):not(.btn-link):focus, .btn-gray:not(.btn-raised):not(.btn-link):hover, .input-group-btn .btn-gray:not(.btn-raised):not(.btn-link):focus, .input-group-btn .btn-gray:not(.btn-raised):not(.btn-link):hover {
+  color: #ffffff;
+  background-color: #677686;
+}
+.search-button > .btn.btn-primary {
+  color: #fff;
+  padding: 10px 25px 10px 25px;
+}
+.search-button > button.btn.btn-primary, .search-button > a.btn.btn-primary {
+  color: #fff;
+  padding: 10px 25px 10px 25px;
+}
+.search-button > button.btn-primary:hover, .search-button > a.btn-primary:hover {
+  opacity: 0.7;
+  color: #044887;
+  background-color: #fff;
+  border: 1px solid #044887;
+}
+.create-button > .btn.btn-primary {
+  color: #fff;
+  padding: 10px 25px 10px 25px;
+  background-color: #27A0DA !important;
+}
+.create-button > .btn-primary:hover {
+  opacity: 0.7;
+  color: #27A0DA;
+  background-color: #fff !important;
+  border: 1px solid #044887;
+}

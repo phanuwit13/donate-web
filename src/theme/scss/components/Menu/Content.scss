@@ -1,0 +1,94 @@
+.content{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6.5%;
+    background-color: #FAFAFA;
+}
+.box-content{
+    width: 74%;
+    // background-color: #19191919;
+    margin-top: 4%;
+}
+
+.box-head-title{
+    margin-bottom: 5%;
+}
+.head-title {
+    font-weight: 600;
+    font-size: 4.5vh;
+    line-height: 130%;
+    color: #5939C6;
+
+}
+.card{
+    width: 31.7%;
+    border-radius: 30px;
+    float: left;
+    margin-top: 0.35%;
+    margin-right: 0.8%;
+    margin-bottom: 1.15%;
+    margin-left: 0.8%;
+}
+.img-content{
+    height: 360px;
+    border-radius: 30px;
+}
+.card-body{
+    height: 269px;
+    padding: 8%;
+}
+.card-title{
+    font-size: 22px;
+    color: #5939C6;
+    font-size: 2.5vh;
+    font-weight: 600;
+}
+.card-text{
+    margin-top: 5%;
+    font-size: 2.3vh;
+    font-weight: 600;
+    display: -webkit-box;
+    height: 154px;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 3.3vh;
+    white-space: normal;
+    text-overflow: inherit;
+    
+}
+.donate-btn{
+    margin: 3%;
+    width: 84%;
+    height: 70px;
+    background: #5939C6;
+    font-size: 2.4vh;
+    color: #ffffff;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 1px solid #5939C6;
+    margin-bottom: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 768px){
+    .box-content{
+        width: 95%;
+    }.head-title{
+        font-weight: 600;
+        font-size: 3.2vh;
+        margin: 2%;
+        color: #5939C6;
+    }
+    .card{
+        width:100%;
+        border-radius: 30px;
+        float: left;
+        margin-top: 2%;
+        margin-right: 0.8%;
+        margin-bottom: 1.15%;
+        margin-left: 0.8%;
+    }
+}
+ 

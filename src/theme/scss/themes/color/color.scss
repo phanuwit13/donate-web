@@ -1,0 +1,70 @@
+$white-color: #fff;
+$black-color: #000;
+$red-color: red;
+$light-blue: #48c0e3;
+
+$theme-color1: #16428C;
+$theme-color2: #1b396d;
+
+/* color themes */
+$theme-body: $white-color;
+$theme-main: $theme-color1;
+$theme-navbar: $white-color;
+$theme-side-menu: $theme-color1;
+$theme-button-menu-mobile: $white-color;
+$theme-button-menu-mobile-hover: $theme-side-menu;
+$theme-button-menu-mobile-color: $black-color;
+$theme-nav-custom-box-shadow: rgba(0, 0, 0, 0.1);
+$theme-nav-span: $black-color;
+$theme-nav-span-last-login: #333;
+$theme-logout-color: $red-color;
+$theme-sidebar: $theme-color2;
+$theme-sidebar-hover: $theme-color2;
+$theme-sidebar-color: $white-color;
+$theme-sidebar-left-color: $theme-color2;
+
+/* color page login */
+$login-bg: #214a90;
+$login-ft-color: #7a7979;
+$login-submit: #2AA8E2;
+$login-submit-color: #fff;
+$login-singtext: $login-submit;
+$login-group-focus: $login-submit;
+
+/* color form wizard */
+$form-wizard-main : $theme-color1;
+$form-wizard-line : $theme-color2;
+$form-wizard-button: #283593; 
+$form-wizard-color: #999; 
+$form-wizard-color-active: #444; 
+
+/* color table */
+$table-header-color: $theme-color1;
+$table-row-child: #e7ecf3;
+
+/* color card */
+$card-color : $theme-color1;
+
+/*  color button   */
+$btn-new-primary-bg: $theme-color1;
+$btn-new-primary-bg-hover: #1b53b1;
+$btn-new-primary-color: $white-color;
+$btn-new-primary-color-hover: $white-color;
+$btn-new-primary-border: $theme-color1;
+
+$btn-new-info-bg: $light-blue;
+$btn-new-info-bg-hover: transparent;
+$btn-new-info-color: $white-color;
+$btn-new-info-color-hover: $light-blue;
+$btn-new-info-border: $light-blue;
+
+/* color button language   */
+$btn-language: $theme-color1;
+
+/* color button login SCB */
+$btn-login-submit-scb: $theme-color1;
+
+/* color Datepicker  SCB */
+$datepicker-scb: $theme-color1;
+$datepicker-bg-scb: $theme-color2;
+// $datepicker-bg-scb: rgba(74, 39, 133, 0.37);

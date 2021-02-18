@@ -1,0 +1,24 @@
+//footer
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+.page-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 6em;
+  text-align: right;
+}
+
+.page-footer .inner {
+  margin-top: -5px;
+  margin-right: 10px;
+  // padding-bottom: 10px;
+}
+
+.page-footer-hr {
+  border-top: 1.4px solid #eee !important;
+}

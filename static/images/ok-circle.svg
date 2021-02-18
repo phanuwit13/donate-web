@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="55px" viewBox="0 0 55 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>ok-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="122.482785%" y1="22.4827854%" x2="-22.4827854%" y2="122.482785%" id="linearGradient-1">
+            <stop stop-color="#6887F5" offset="0%"></stop>
+            <stop stop-color="#004AF5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="TransactionSuccess" transform="translate(-250.000000, -255.000000)" stroke-width="3">
+            <g id="ok-circle" transform="translate(252.000000, 257.000000)">
+                <circle id="Oval" stroke="url(#linearGradient-1)" fill="url(#linearGradient-1)" cx="25.5" cy="25.5" r="25.5"></circle>
+                <polyline id="Shape" stroke="#FFFFFF" points="12.75 28.05 20.4 35.7 38.25 17.85"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

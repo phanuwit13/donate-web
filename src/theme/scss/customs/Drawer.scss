@@ -1,0 +1,74 @@
+.drawer-top-hearder {
+  margin: 10px 0px 20px;
+  display: flex;
+}
+
+.drawer-hearder {
+  display: flex;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
+  &__refno {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    color: $dark-blue;
+    font-size: 22px;
+    font-weight: 500
+  }
+  &__userID-no {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    color: $dark-blue;
+    font-size: 18px;
+    font-weight: 500
+  }
+}
+
+.drawer-formGroup {
+  margin-top: 10px;
+
+  &__drawer-amount {
+    margin-top: -15px;
+  }
+  hr {
+    margin: 0px 10px;
+    border: 0.5px solid $gray3-color;
+  }
+  &__drawer-text-line {
+    margin: 4px -14px;
+    display: flex;
+  }
+  &__drawer-title {
+    margin: 0px 10px;
+
+    span {
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+}
+
+@mixin button-new-color($color) {
+  background-color: $color !important;
+  border-radius: 0px;
+  padding: 18px 10px;
+}
+
+.btn-purple {
+  @include button-new-color($indigo-color);
+}
+
+.btn-purple:not(.btn-raised),
+.btn-purple:not(.btn-raised).btn-default,
+.input-group-btn .btn-purple:not(.btn-raised),
+.input-group-btn .btn-purple:not(.btn-raised).btn-default {
+  color: $white-color;
+}
+
+.btn-purple:not(.btn-raised):not(.btn-link):focus,
+.btn-purple:not(.btn-raised):not(.btn-link):hover,
+.input-group-btn .btn-purple:not(.btn-raised):not(.btn-link):focus,
+.input-group-btn .btn-purple:not(.btn-raised):not(.btn-link):hover {
+  color: $white-color;
+  background-color: $drak-indigo1-color !important;
+}
