@@ -113,7 +113,7 @@ export default class FormData extends Component {
             <div className='form-box1' >
               <div className='detail-form-content'>
                 <div>
-                  <div className='donate-title-form'>บริจาคให้ ใครรักป่ายกมือขึ้น 2563-2564</div>
+                  <div className='donate-title-form'>{ this.state.data.title}</div>
                   <form onSubmit={ this.onSubmit }>
                     <div className='form-group'>
                       <label className='group-label'>ระบุจำนวนเงินที่บริจาค (บาท)</label>
