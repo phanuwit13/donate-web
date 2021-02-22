@@ -85,9 +85,9 @@ export default class FormData extends Component {
         window.location.href = response.data.redirectUrl
       } else {
         Swal.fire(
-          'The Internet?',
-          'That thing is still around?',
-          'question'
+          'Error',
+          'request failed !',
+          'error'
         )
       }
     }).catch(err => console.error(err))
