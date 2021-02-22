@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import {} from '../../theme/scss/components/Form/Formdata.scss'
 import axios from 'axios'
 import Swal from 'sweetalert2'
-const crypto = require('crypto')
-const config = require('../../config/config')
-import { Redirect } from '../../until/index'
 export default class FormData extends Component {
   constructor (props) {
     super(props)
@@ -24,9 +21,6 @@ export default class FormData extends Component {
       reference_5: '',
       payment_type: '',
       customer_email: '',
-      api_id: '',
-      api_key: '',
-      sign_key: '',
       data: []
     }
   }
@@ -35,12 +29,7 @@ export default class FormData extends Component {
     let order_id = Math.floor(Math.random() * 1E16)
     this.setState(
       {
-        order_id: order_id,
-        api_id: config.api_id,
-        api_key: config.api_key,
-        sign_key: config.sign_key,
-        url_redirect: config.url_redirect,
-        url_notify: config.url_notify
+        order_id: order_id
       })
   }
   onSiteChanged (e) {
@@ -64,12 +53,10 @@ export default class FormData extends Component {
   onSubmit = (e) => {
     e.preventDefault()
     var results = e.target
-    const hmac = crypto.createHmac('sha256', this.state.sign_key)
-    const sign = hmac.update([this.state.merchant_id, this.state.order_id.toString(), results.amount.value, null, null, null].join('.')).digest('base64')
     console.log(results.amount.value)
     axios({
       method: 'POST',
-      url: 'https://octopus-unify.digipay.dev/api/v1/redirect/sale',
+      url: 'api/senddonation',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
@@ -78,8 +65,6 @@ export default class FormData extends Component {
         merchant_id: this.state.merchant_id,
         order_id: this.state.order_id.toString(),
         amount: results.amount.value,
-        url_redirect: this.state.url_redirect,
-        url_notify: this.state.url_notify,
         payment_description: '',
         currency: 'THB',
         promotion: '',
@@ -89,20 +74,22 @@ export default class FormData extends Component {
         reference_4: '',
         reference_5: '',
         payment_type: results.payment_type.value,
-        customer_email: results.customer_email.value,
-        api_id: this.state.api_id,
-        api_key: this.state.api_key,
-        sign_key: this.state.sign_key,
-        sign: sign
+        customer_email: results.customer_email.value
       },
       maxRedirects: 0,
       validateStatus: status => status >= 200 && status <= 302
     })
     .then((response) => {
-      const redirectUrl = response.request.responseURL
-      console.log(redirectUrl)
-      window.location = redirectUrl
-      // Redirect(redirectUrl)
+      console.log(response)
+      if (response.data.res_code) {
+        window.location.href = response.data.redirectUrl
+      } else {
+        Swal.fire(
+          'The Internet?',
+          'That thing is still around?',
+          'question'
+        )
+      }
     }).catch(err => console.error(err))
   }
   render () {

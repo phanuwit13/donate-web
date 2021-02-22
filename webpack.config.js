@@ -85,7 +85,7 @@ module.exports = merge(FILES, {
     disableHostCheck: true,
     proxy: {
       '/api/*': {
-        target: 'https://octopus-unify.digipay.dev/'
+        target: 'http://localhost:4020/'
       }
     }
   },
